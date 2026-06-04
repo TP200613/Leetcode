@@ -16,11 +16,12 @@ Leetcode/
 
 ### Easy
 
-| Problem No. | Problem Name      |
-|-------------|-------------------|
-| 0001        | Two Sum           |
-| 0009        | Palindrome Number |
-| 0013        | Roman to Integer  |
+| Problem No. | Problem Name          |
+|-------------|-----------------------|
+| 0001        | Two Sum               |
+| 0009        | Palindrome Number     |
+| 0013        | Roman to Integer      |
+| 0014        | Longest Common Prefix |
 
 ## Technologies
 
