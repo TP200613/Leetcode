@@ -1,7 +1,10 @@
 import os
 import re
 
-README = "../README.md"
+# Repository root directory
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+README = os.path.join(ROOT, "README.md")
 
 
 def get_problems(folder):
@@ -12,7 +15,7 @@ def get_problems(folder):
 
     for file in sorted(os.listdir(folder)):
 
-        # Count only Python files
+        # Count only Python solution files
         if not file.endswith(".py"):
             continue
 
@@ -22,17 +25,15 @@ def get_problems(folder):
 
         if match:
             problem_no = match.group(1)
-            problem_name = match.group(2)
-
             problem_name = (
-                problem_name
+                match.group(2)
                 .replace("_", " ")
                 .replace("-", " ")
                 .title()
             )
         else:
             problem_no = "-"
-            problem_name = filename
+            problem_name = filename.replace("_", " ").title()
 
         problems.append((problem_no, problem_name))
 
@@ -49,9 +50,9 @@ def generate_table(problems):
     return table
 
 
-easy = get_problems("../Easy")
-medium = get_problems("../Medium")
-hard = get_problems("../Hard")
+easy = get_problems(os.path.join(ROOT, "Easy"))
+medium = get_problems(os.path.join(ROOT, "Medium"))
+hard = get_problems(os.path.join(ROOT, "Hard"))
 
 easy_count = len(easy)
 medium_count = len(medium)
