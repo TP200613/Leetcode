@@ -22,12 +22,13 @@ jobs:
           python-version: '3.x'
 
       - name: Run README updater
-        run: python update_readme.py
+        run: python scripts/update_readme.py
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add README.md
           git diff --cached --quiet || git commit -m "Auto-update README with latest solutions"
           git push
