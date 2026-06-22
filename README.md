@@ -16,12 +16,24 @@ Leetcode/
 
 ### Easy
 
-| Problem No. | Problem Name          |
-|-------------|-----------------------|
-| 0001        | Two Sum               |
-| 0009        | Palindrome Number     |
-| 0013        | Roman to Integer      |
-| 0014        | Longest Common Prefix |
+<!-- EASY_START -->
+| Problem No. | Problem Name |
+| ----------- | ------------ |
+<!-- EASY_END -->
+
+### Medium
+
+<!-- MEDIUM_START -->
+| Problem No. | Problem Name |
+| ----------- | ------------ |
+<!-- MEDIUM_END -->
+
+### Hard
+
+<!-- HARD_START -->
+| Problem No. | Problem Name |
+| ----------- | ------------ |
+<!-- HARD_END -->
 
 ## Technologies
 
@@ -36,10 +48,12 @@ Leetcode/
 
 ## Progress
 
-- Total Solved: 2
-- Easy: 2
+<!-- STATS_START -->
+- Total Solved: 0
+- Easy: 0
 - Medium: 0
 - Hard: 0
+<!-- STATS_END -->
 
 ---
 
