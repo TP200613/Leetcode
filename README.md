@@ -19,6 +19,22 @@ Leetcode/
 <!-- EASY_START -->
 | Problem No. | Problem Name |
 | ----------- | ------------ |
+| 0001 | Two Sum |
+| 0009 | Palindrome Number |
+| 0013 | Roman To Integer |
+| 0014 | Longest Common Prefix |
+| 0020 | Valid Parentheses |
+| 0021 | Merge Two Sorted Lists |
+| 0028 | Find The Index Of The First Occurrence In A String |
+| 0035 | Search Insert Position |
+| 0058 | Length Of Last Word |
+| 0067 | Add Binary |
+| 0069 | Sqrt X |
+| 0070 | Climbing Stairs |
+| 0231 | Power Of Two |
+| 0415 | Add Strings |
+| 0796 | Rotate String |
+| 1189 | Maximum Number Of Balloons |
 <!-- EASY_END -->
 
 ### Medium
@@ -49,8 +65,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 0
-- Easy: 0
+- Total Solved: 16
+- Easy: 16
 - Medium: 0
 - Hard: 0
 <!-- STATS_END -->
