@@ -1,112 +1,70 @@
 import os
 import re
 
-# Repository root directory
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-README = os.path.join(ROOT, "README.md")
-
+FOLDERS = {
+    "Easy":   ("EASY_START",   "EASY_END"),
+    "Medium": ("MEDIUM_START", "MEDIUM_END"),
+    "Hard":   ("HARD_START",   "HARD_END"),
+}
 
 def get_problems(folder):
     problems = []
-
     if not os.path.exists(folder):
         return problems
-
-    for file in sorted(os.listdir(folder)):
-
-        # Count only Python solution files
-        if not file.endswith(".py"):
+    for filename in sorted(os.listdir(folder)):
+        if not filename.endswith(".py"):
             continue
-
-        filename = os.path.splitext(file)[0]
-
-        match = re.match(r"(\d+)[_-](.*)", filename)
-
-        if match:
-            problem_no = match.group(1)
-            problem_name = (
-                match.group(2)
-                .replace("_", " ")
-                .replace("-", " ")
-                .title()
-            )
-        else:
-            problem_no = "-"
-            problem_name = filename.replace("_", " ").title()
-
-        problems.append((problem_no, problem_name))
-
+        name = filename[:-3]  # remove .py
+        parts = name.split("_", 1)
+        if len(parts) < 2:
+            continue
+        number = parts[0].zfill(4)
+        title = parts[1].replace("_", " ").title()
+        problems.append((number, title))
     return problems
 
+def build_table(problems):
+    lines = []
+    lines.append("| Problem No. | Problem Name |")
+    lines.append("| ----------- | ------------ |")
+    for number, title in problems:
+        lines.append(f"| {number} | {title} |")
+    return "\n".join(lines)
 
-def generate_table(problems):
-    table = "| Problem No. | Problem Name |\n"
-    table += "|------------|-------------|\n"
+def update_section(content, start_marker, end_marker, new_table):
+    pattern = rf"(<!-- {start_marker} -->).*?(<!-- {end_marker} -->)"
+    replacement = f"<!-- {start_marker} -->\n{new_table}\n<!-- {end_marker} -->"
+    return re.sub(pattern, replacement, content, flags=re.DOTALL)
 
-    for number, name in problems:
-        table += f"| {number} | {name} |\n"
+def update_stats(content, counts):
+    total = sum(counts.values())
+    stats = (
+        f"- Total Solved: {total}\n"
+        f"- Easy: {counts['Easy']}\n"
+        f"- Medium: {counts['Medium']}\n"
+        f"- Hard: {counts['Hard']}"
+    )
+    pattern = r"(<!-- STATS_START -->).*?(<!-- STATS_END -->)"
+    replacement = f"<!-- STATS_START -->\n{stats}\n<!-- STATS_END -->"
+    return re.sub(pattern, replacement, content, flags=re.DOTALL)
 
-    return table
+def main():
+    with open("README.md", "r", encoding="utf-8") as f:
+        content = f.read()
 
+    counts = {}
+    for folder, (start, end) in FOLDERS.items():
+        problems = get_problems(folder)
+        counts[folder] = len(problems)
+        table = build_table(problems)
+        content = update_section(content, start, end, table)
 
-easy = get_problems(os.path.join(ROOT, "Easy"))
-medium = get_problems(os.path.join(ROOT, "Medium"))
-hard = get_problems(os.path.join(ROOT, "Hard"))
+    content = update_stats(content, counts)
 
-easy_count = len(easy)
-medium_count = len(medium)
-hard_count = len(hard)
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(content)
 
-total_count = easy_count + medium_count + hard_count
+    print(f"README updated. Total solved: {sum(counts.values())}")
 
-progress_section = f"""
-- Total Solved: {total_count}
-- Easy: {easy_count}
-- Medium: {medium_count}
-- Hard: {hard_count}
-""".strip()
-
-easy_table = generate_table(easy)
-medium_table = generate_table(medium)
-hard_table = generate_table(hard)
-
-with open(README, "r", encoding="utf-8") as file:
-    content = file.read()
-
-content = re.sub(
-    r"<!-- STATS_START -->(.*?)<!-- STATS_END -->",
-    f"<!-- STATS_START -->\n{progress_section}\n<!-- STATS_END -->",
-    content,
-    flags=re.DOTALL,
-)
-
-content = re.sub(
-    r"<!-- EASY_START -->(.*?)<!-- EASY_END -->",
-    f"<!-- EASY_START -->\n{easy_table}\n<!-- EASY_END -->",
-    content,
-    flags=re.DOTALL,
-)
-
-content = re.sub(
-    r"<!-- MEDIUM_START -->(.*?)<!-- MEDIUM_END -->",
-    f"<!-- MEDIUM_START -->\n{medium_table}\n<!-- MEDIUM_END -->",
-    content,
-    flags=re.DOTALL,
-)
-
-content = re.sub(
-    r"<!-- HARD_START -->(.*?)<!-- HARD_END -->",
-    f"<!-- HARD_START -->\n{hard_table}\n<!-- HARD_END -->",
-    content,
-    flags=re.DOTALL,
-)
-
-with open(README, "w", encoding="utf-8") as file:
-    file.write(content)
-
-print("README updated successfully!")
-print(f"Easy   : {easy_count}")
-print(f"Medium : {medium_count}")
-print(f"Hard   : {hard_count}")
-print(f"Total  : {total_count}")
+if __name__ == "__main__":
+    main()
