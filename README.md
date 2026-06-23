@@ -28,6 +28,7 @@ Leetcode/
 | 0028 | Find The Index Of The First Occurrence In A String |
 | 0035 | Search Insert Position |
 | 0058 | Length Of Last Word |
+| 0066 | Pluse One |
 | 0067 | Add Binary |
 | 0069 | Sqrt X |
 | 0070 | Climbing Stairs |
@@ -65,8 +66,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 16
-- Easy: 16
+- Total Solved: 17
+- Easy: 17
 - Medium: 0
 - Hard: 0
 <!-- STATS_END -->
