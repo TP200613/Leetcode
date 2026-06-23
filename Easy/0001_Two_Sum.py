@@ -1,3 +1,4 @@
+# Problem: Find two numbers in the array whose sum is equal to the target.
 class Solution(object):
     def twoSum(self, nums, target):
         for i in range(len(nums)):

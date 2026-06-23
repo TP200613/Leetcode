@@ -1,3 +1,4 @@
+# Problem: Check whether the given number is a palindrome.
 class Solution(object):
     def isPalindrome(self, x):
         a=str(x)

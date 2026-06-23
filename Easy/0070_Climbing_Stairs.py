@@ -1,3 +1,4 @@
+# Problem: Find the number of distinct ways to climb to the top of the staircase.
 class Solution(object):
     def climbStairs(self, n):
         if n == 1:

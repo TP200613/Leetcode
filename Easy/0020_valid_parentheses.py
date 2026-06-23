@@ -1,3 +1,4 @@
+# Problem: Check if the given parentheses string is valid.
 class Solution:
     def isValid(self,s):
 

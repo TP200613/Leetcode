@@ -1,3 +1,4 @@
+# Problem: Check whether the given number is a power of two.
 class Solution(object):
     def isPowerOfTwo(self, n):
         a=0

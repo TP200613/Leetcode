@@ -1,3 +1,4 @@
+# Problem: Merge two sorted linked lists into one sorted linked list.
 class Solution:
     def mergeTwoLists(self, list1, list2):
         dummy = ListNode(0)   # temporary starting node

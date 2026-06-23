@@ -1,3 +1,4 @@
+# Problem: Add two non-negative integers given as strings.
 class Solution(object):
     def addStrings(self, num1, num2):
         i = len(num1) - 1

@@ -1,3 +1,4 @@
+# Problem: Find the first index of the substring in the given string.
 class Solution(object):
     def strStr(self, haystack, needle):
         if needle in haystack:
