@@ -33,6 +33,7 @@ Leetcode/
 | 0069 | Sqrt X |
 | 0070 | Climbing Stairs |
 | 0231 | Power Of Two |
+| 0389 | Find The Difference |
 | 0415 | Add Strings |
 | 0796 | Rotate String |
 | 1189 | Maximum Number Of Balloons |
@@ -43,6 +44,7 @@ Leetcode/
 <!-- MEDIUM_START -->
 | Problem No. | Problem Name |
 | ----------- | ------------ |
+| 0050 | Power(X,N) |
 <!-- MEDIUM_END -->
 
 ### Hard
@@ -66,9 +68,9 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 17
-- Easy: 17
-- Medium: 0
+- Total Solved: 19
+- Easy: 18
+- Medium: 1
 - Hard: 0
 <!-- STATS_END -->
 
