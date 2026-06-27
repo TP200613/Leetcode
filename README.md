@@ -44,6 +44,7 @@ Leetcode/
 <!-- MEDIUM_START -->
 | Problem No. | Problem Name |
 | ----------- | ------------ |
+| 00007 | Reverse Integer |
 | 0050 | Power(X,N) |
 <!-- MEDIUM_END -->
 
@@ -68,9 +69,9 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 19
+- Total Solved: 20
 - Easy: 18
-- Medium: 1
+- Medium: 2
 - Hard: 0
 <!-- STATS_END -->
 
