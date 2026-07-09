@@ -25,6 +25,8 @@ Leetcode/
 | 0014 | Longest Common Prefix |
 | 0020 | Valid Parentheses |
 | 0021 | Merge Two Sorted Lists |
+| 0026 | Remove Duplicates From Sorted Array |
+| 0027 | Remove Element |
 | 0028 | Find The Index Of The First Occurrence In A String |
 | 0035 | Search Insert Position |
 | 0058 | Length Of Last Word |
@@ -69,8 +71,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 20
-- Easy: 18
+- Total Solved: 22
+- Easy: 20
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
