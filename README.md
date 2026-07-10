@@ -35,6 +35,7 @@ Leetcode/
 | 0069 | Sqrt X |
 | 0070 | Climbing Stairs |
 | 0231 | Power Of Two |
+| 0258 | Add Digits |
 | 0389 | Find The Difference |
 | 0415 | Add Strings |
 | 0796 | Rotate String |
@@ -71,8 +72,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 22
-- Easy: 20
+- Total Solved: 23
+- Easy: 21
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
