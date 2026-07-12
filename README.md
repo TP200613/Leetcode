@@ -39,6 +39,7 @@ Leetcode/
 | 0258 | Add Digits |
 | 0389 | Find The Difference |
 | 0415 | Add Strings |
+| 0504 | Base 7 |
 | 0796 | Rotate String |
 | 1189 | Maximum Number Of Balloons |
 <!-- EASY_END -->
@@ -73,8 +74,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 24
-- Easy: 22
+- Total Solved: 25
+- Easy: 23
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
