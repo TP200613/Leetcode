@@ -34,6 +34,7 @@ Leetcode/
 | 0067 | Add Binary |
 | 0069 | Sqrt X |
 | 0070 | Climbing Stairs |
+| 0125 | Valid Palindrome |
 | 0231 | Power Of Two |
 | 0236 | Ugly Number |
 | 0258 | Add Digits |
@@ -75,8 +76,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 26
-- Easy: 24
+- Total Solved: 27
+- Easy: 25
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
