@@ -37,6 +37,7 @@ Leetcode/
 | 0125 | Valid Palindrome |
 | 0231 | Power Of Two |
 | 0236 | Ugly Number |
+| 0242 | Valid Anagram |
 | 0258 | Add Digits |
 | 0389 | Find The Difference |
 | 0415 | Add Strings |
@@ -76,8 +77,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 27
-- Easy: 25
+- Total Solved: 28
+- Easy: 26
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
