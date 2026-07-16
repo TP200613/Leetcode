@@ -45,6 +45,7 @@ Leetcode/
 | 0507 | Perfect Number |
 | 0796 | Rotate String |
 | 1189 | Maximum Number Of Balloons |
+| 2272 | Find Resultant Array After Removing Anagrams |
 <!-- EASY_END -->
 
 ### Medium
@@ -77,8 +78,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 28
-- Easy: 26
+- Total Solved: 29
+- Easy: 27
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
