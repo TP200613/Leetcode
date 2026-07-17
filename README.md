@@ -35,6 +35,7 @@ Leetcode/
 | 0069 | Sqrt X |
 | 0070 | Climbing Stairs |
 | 0125 | Valid Palindrome |
+| 0136 | Single Number |
 | 0231 | Power Of Two |
 | 0236 | Ugly Number |
 | 0242 | Valid Anagram |
@@ -78,8 +79,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 29
-- Easy: 27
+- Total Solved: 30
+- Easy: 28
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
