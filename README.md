@@ -34,6 +34,7 @@ Leetcode/
 | 0067 | Add Binary |
 | 0069 | Sqrt X |
 | 0070 | Climbing Stairs |
+| 0083 | Remove Duplicates From Sorted List |
 | 0125 | Valid Palindrome |
 | 0136 | Single Number |
 | 0231 | Power Of Two |
@@ -79,8 +80,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 30
-- Easy: 28
+- Total Solved: 31
+- Easy: 29
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
