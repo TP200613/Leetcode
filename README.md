@@ -47,6 +47,7 @@ Leetcode/
 | 0507 | Perfect Number |
 | 0796 | Rotate String |
 | 1189 | Maximum Number Of Balloons |
+| 0168 | Excel Sheet Column |
 | 2272 | Find Resultant Array After Removing Anagrams |
 <!-- EASY_END -->
 
@@ -80,8 +81,8 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 31
-- Easy: 29
+- Total Solved: 32
+- Easy: 30
 - Medium: 2
 - Hard: 0
 <!-- STATS_END -->
