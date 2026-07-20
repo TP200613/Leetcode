@@ -58,6 +58,7 @@ Leetcode/
 | ----------- | ------------ |
 | 0007 | Reverse Integer |
 | 0011 | Container With Most Water |
+| 0034 | Find First And Last Position Of Element In Sorted Array |
 | 0050 | Power(X,N) |
 <!-- MEDIUM_END -->
 
@@ -82,9 +83,9 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 33
+- Total Solved: 34
 - Easy: 30
-- Medium: 3
+- Medium: 4
 - Hard: 0
 <!-- STATS_END -->
 
