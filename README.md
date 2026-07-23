@@ -61,6 +61,7 @@ Leetcode/
 | 0034 | Find First And Last Position Of Element In Sorted Array |
 | 0036 | Valid Sudoku |
 | 0050 | Power(X,N) |
+| 0179 | Largest Number |
 <!-- MEDIUM_END -->
 
 ### Hard
@@ -84,9 +85,9 @@ Leetcode/
 ## Progress
 
 <!-- STATS_START -->
-- Total Solved: 35
+- Total Solved: 36
 - Easy: 30
-- Medium: 5
+- Medium: 6
 - Hard: 0
 <!-- STATS_END -->
 
